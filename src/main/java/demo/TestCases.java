@@ -101,35 +101,35 @@ public class TestCases {
   }
 
   public void testcase04() throws InterruptedException {
-     System.out.println("start Test case: testCase04");
+    System.out.println("start Test case: testCase04");
     boolean status = false;
-    int counter = 0 ;
-     String url = "https://stackoverflow.com/";
+    int counter = 0;
+    String url = "https://stackoverflow.com/";
     action.navigate_to_url(url);
     Thread.sleep(2000);
-  
 
-    action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//span[contains(@class, '-link--channel-name pl8') and contains(text(), 'Tags')]")));
-
+    action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(
+        By.xpath("//span[contains(@class, '-link--channel-name pl8') and contains(text(), 'Tags')]")));
 
     action.click(By.xpath("//span[contains(@class, '-link--channel-name pl8') and contains(text(), 'Tags')]"));
     Thread.sleep(5000);
 
     action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//a[text() = 'javascript']")));
 
-   
     action.click(By.xpath("//a[text() = 'javascript']"));
     Thread.sleep(4000);
 
-    action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@class = 'ml0 list-ls-none js-post-tag-list-wrapper d-inline']")));
+    action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(
+        By.xpath("//ul[@class = 'ml0 list-ls-none js-post-tag-list-wrapper d-inline']")));
 
-    List<WebElement> verifying_results = driver.findElements(By.xpath("//ul[@class = 'ml0 list-ls-none js-post-tag-list-wrapper d-inline']"));
+    List<WebElement> verifying_results = driver
+        .findElements(By.xpath("//ul[@class = 'ml0 list-ls-none js-post-tag-list-wrapper d-inline']"));
 
     for (WebElement element : verifying_results) {
       String gettext = element.getText();
 
       if (gettext.contains("javascript")) {
-        counter = counter + 1 ;
+        counter = counter + 1;
       }
     }
     if ((counter >= 10)) {
@@ -139,38 +139,40 @@ public class TestCases {
     System.out.println("completed Test case: testCase04");
     Thread.sleep(2000);
 
-    }
-  
+  }
 
   public void testcase05() throws InterruptedException {
-     System.out.println("start Test case: testCase04");
-
-    boolean status = false;
-
+    System.out.println("start Test case: testCase05");
+    boolean status = true;
+    List<Integer> storing_value = new ArrayList<>();
     String url = "https://stackoverflow.com/";
     action.navigate_to_url(url);
     Thread.sleep(2000);
 
     action.click(By.xpath("//button[@aria-controls='uql-more-popover']"));
 
-    WebElement verifying_soure = driver.findElement(By.cssSelector("a.s-block-link.s-block-link__left.js-gps-track[href='/questions?tab=Votes']"));
-   
-    Assert.isTrue(verifying_soure.getText().equalsIgnoreCase("Score"),  "button score is not contains in more button");
-   
+    WebElement verifying_soure = driver
+        .findElement(By.cssSelector("a.s-block-link.s-block-link__left.js-gps-track[href='/questions?tab=Votes']"));
+
+    Assert.isTrue(verifying_soure.getText().equalsIgnoreCase("Score"), "button score is not contains in more button");
+
     action.click(By.xpath(" //a[@aria-current='page']"));
 
-    action.waitfor(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//a[@aria-current='page']")));
-    
+    action.waitfor(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//span[@itemprop='upvoteCount']")));
 
-     System.out.println("complete Test case: testCase05");
+    List<WebElement> verify_descending = driver.findElements(By.xpath("//span[@itemprop='upvoteCount']"));
 
-  
-
-    
-
+    for (WebElement element : verify_descending) {
+      int converting_Str_to_int = Integer.parseInt(element.getText());
+      storing_value.add(converting_Str_to_int);
 
     }
-
+    for (int i = 0; i < storing_value.size() - 1; i++) {
+      if (storing_value.get(i) < storing_value.get(i + 1)) {
+         status = false;
+        break;
+      }
+    } 
+    System.out.println("complete Test case: testCase05");
   }
-
-
+}
