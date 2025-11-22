@@ -112,12 +112,10 @@ public class TestCases {
         By.xpath("//span[contains(@class, '-link--channel-name pl8') and contains(text(), 'Tags')]")));
 
     action.click(By.xpath("//span[contains(@class, '-link--channel-name pl8') and contains(text(), 'Tags')]"));
-    Thread.sleep(5000);
 
     action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//a[text() = 'javascript']")));
 
     action.click(By.xpath("//a[text() = 'javascript']"));
-    Thread.sleep(4000);
 
     action.waitfor(ExpectedConditions.presenceOfAllElementsLocatedBy(
         By.xpath("//ul[@class = 'ml0 list-ls-none js-post-tag-list-wrapper d-inline']")));
