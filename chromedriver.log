@@ -1,3 +1,288 @@
 [1763107466.356][INFO]: Starting ChromeDriver 142.0.7444.162 (c076baf266c3ed5efb225de664cfa7b183668ad6-refs/branch-heads/7444@{#2498}) on port 45894
 [1763107466.356][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 [1763107466.368][INFO]: ChromeDriver was started successfully on port 45894
+[1763107466.696][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "goog:loggingPrefs": {
+            "browser": "ALL",
+            "driver": "ALL"
+         }
+      } ]
+   }
+}
+[1763107466.696][INFO]: Browser search. Trying... C:\Users\Dell\.cache\selenium\chromedriver\win64\142.0.7444.162\chrome.exe
+[1763107466.696][INFO]: Browser search. Trying... C:\Users\Dell\.cache\selenium\chromedriver\win64\142.0.7444.162\chrome.exe
+[1763107466.696][INFO]: Browser search. Trying... C:\Users\Dell\.cache\selenium\chromedriver\win64\142.0.7444.162\chromium.exe
+[1763107466.699][INFO]: Browser search. Trying... C:\Users\Dell\AppData\Local\Google\Chrome\Application\chrome.exe
+[1763107466.699][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1763107466.699][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1763107466.700][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1763107466.701][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1763107466.702][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1763107466.702][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1763107466.704][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-features=IgnoreDuplicateNavs,Prewarm --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Dell\AppData\Local\Temp\scoped_dir15060_485666264" data:,
+[1763107467.608][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1763107467.913][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "142.0.7444.163",
+      "chrome": {
+         "chromedriverVersion": "142.0.7444.162 (c076baf266c3ed5efb225de664cfa7b183668ad6-refs/branch-heads/7444@{#2498})",
+         "userDataDir": "C:\\Users\\Dell\\AppData\\Local\\Temp\\scoped_dir15060_485666264"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:63850"
+      },
+      "goog:processID": 6580,
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "~~~": "..."
+   },
+   "sessionId": "d70aa1cfb89289053eb29deaf04c0192"
+}
+[1763107468.379][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND MaximizeWindow {
+}
+[1763107468.379][INFO]: Waiting for pending navigations...
+[1763107468.380][INFO]: Done waiting for pending navigations. Status: ok
+[1763107468.479][INFO]: Waiting for pending navigations...
+[1763107468.480][INFO]: Done waiting for pending navigations. Status: ok
+[1763107468.480][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE MaximizeWindow {
+   "height": 837,
+   "width": 1477,
+   "x": -7,
+   "y": -7
+}
+[1763107478.213][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND GetUrl {
+}
+[1763107478.213][INFO]: Waiting for pending navigations...
+[1763107478.214][INFO]: Done waiting for pending navigations. Status: ok
+[1763107478.222][INFO]: Waiting for pending navigations...
+[1763107478.223][INFO]: Done waiting for pending navigations. Status: ok
+[1763107478.223][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE GetUrl "data:,"
+[1763107478.293][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND Navigate {
+   "url": "https://stackoverflow.com/"
+}
+[1763107478.293][INFO]: Waiting for pending navigations...
+[1763107478.294][INFO]: Done waiting for pending navigations. Status: ok
+[1763107480.574][INFO]: Waiting for pending navigations...
+[1763107480.574][INFO]: Done waiting for pending navigations. Status: ok
+[1763107480.574][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE Navigate
+[1763107487.561][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[@aria-controls='uql-more-popover']"
+}
+[1763107487.576][INFO]: Waiting for pending navigations...
+[1763107507.148][INFO]: Done waiting for pending navigations. Status: ok
+[1763107507.184][INFO]: Waiting for pending navigations...
+[1763107507.186][INFO]: Done waiting for pending navigations. Status: ok
+[1763107507.186][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.C11042157DBD26BD673833F3CE8A40AE.d.D04ED0487A2428F26A9899692D7DE36A.e.79"
+}
+[1763107507.370][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND ClickElement {
+   "id": "f.C11042157DBD26BD673833F3CE8A40AE.d.D04ED0487A2428F26A9899692D7DE36A.e.79"
+}
+[1763107507.370][INFO]: Waiting for pending navigations...
+[1763107507.371][INFO]: Done waiting for pending navigations. Status: ok
+[1763107507.542][INFO]: Waiting for pending navigations...
+[1763107507.545][INFO]: Done waiting for pending navigations. Status: ok
+[1763107507.545][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE ClickElement
+[1763107509.879][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElement {
+   "using": "css selector",
+   "value": "a.s-block-link.s-block-link__left.js-gps-track[href='/questions?tab=Votes']"
+}
+[1763107509.937][INFO]: Waiting for pending navigations...
+[1763107509.941][INFO]: Done waiting for pending navigations. Status: ok
+[1763107509.958][INFO]: Waiting for pending navigations...
+[1763107509.959][INFO]: Done waiting for pending navigations. Status: ok
+[1763107509.959][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.C11042157DBD26BD673833F3CE8A40AE.d.D04ED0487A2428F26A9899692D7DE36A.e.80"
+}
+[1763107511.972][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND GetElementText {
+   "id": "f.C11042157DBD26BD673833F3CE8A40AE.d.D04ED0487A2428F26A9899692D7DE36A.e.80"
+}
+[1763107511.972][INFO]: Waiting for pending navigations...
+[1763107511.973][INFO]: Done waiting for pending navigations. Status: ok
+[1763107511.990][INFO]: Waiting for pending navigations...
+[1763107511.991][INFO]: Done waiting for pending navigations. Status: ok
+[1763107511.991][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE GetElementText "Score"
+[1763107513.072][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElement {
+   "using": "xpath",
+   "value": " //a[@aria-current='page']"
+}
+[1763107513.072][INFO]: Waiting for pending navigations...
+[1763107513.073][INFO]: Done waiting for pending navigations. Status: ok
+[1763107513.091][INFO]: Waiting for pending navigations...
+[1763107513.092][INFO]: Done waiting for pending navigations. Status: ok
+[1763107513.092][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.C11042157DBD26BD673833F3CE8A40AE.d.D04ED0487A2428F26A9899692D7DE36A.e.81"
+}
+[1763107513.196][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND ClickElement {
+   "id": "f.C11042157DBD26BD673833F3C[1763107599.698][SEVERE]: Timed out receiving message from renderer: 300.000
+[1763107599.698][INFO]: Timed out. Stopping navigation...
+[1763107599.704][SEVERE]: Timed out receiving message from renderer: 300.000
+[1763107599.704][INFO]: Done waiting for pending navigations. Status: timeout: Timed out receiving message from renderer: 300.000
+[1763107599.704][INFO]: [cf5c442be0875d82808f6c747f15bcd9] RESPONSE FindElement ERROR timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=142.0.7444.163)
+rop='upvoteCount']"
+}
+[1763107565.485][INFO]: Waiting for pending navigations...
+[1763107565.486][INFO]: Done waiting for pending navigations. Status: ok
+[1763107565.509][INFO]: Waiting for pending navigations...
+[1763107565.510][INFO]: Done waiting for pending navigations. Status: ok
+[1763107565.510][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107566.354][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107566.354][INFO]: Waiting for pending navigations...
+[1763107566.355][INFO]: Done waiting for pending navigations. Status: ok
+[1763107566.364][INFO]: Waiting for pending navigations...
+[1763107566.365][INFO]: Done waiting for pending navigations. Status: ok
+[1763107566.365][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107566.960][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107566.961][INFO]: Waiting for pending navigations...
+[1763107566.961][INFO]: Done waiting for pending navigations. Status: ok
+[1763107566.969][INFO]: Waiting for pending navigations...
+[1763107566.970][INFO]: Done waiting for pending navigations. Status: ok
+[1763107566.970][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107567.618][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107567.618][INFO]: Waiting for pending navigations...
+[1763107567.619][INFO]: Done waiting for pending navigations. Status: ok
+[1763107567.627][INFO]: Waiting for pending navigations...
+[1763107567.627][INFO]: Done waiting for pending navigations. Status: ok
+[1763107567.627][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107568.196][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107568.196][INFO]: Waiting for pending navigations...
+[1763107568.196][INFO]: Done waiting for pending navigations. Status: ok
+[1763107568.204][INFO]: Waiting for pending navigations...
+[1763107568.204][INFO]: Done waiting for pending navigations. Status: ok
+[1763107568.204][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107568.871][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107568.871][INFO]: Waiting for pending navigations...
+[1763107568.872][INFO]: Done waiting for pending navigations. Status: ok
+[1763107568.883][INFO]: Waiting for pending navigations...
+[1763107568.905][INFO]: Done waiting for pending navigations. Status: ok
+[1763107568.905][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107569.594][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107569.594][INFO]: Waiting for pending navigations...
+[1763107569.595][INFO]: Done waiting for pending navigations. Status: ok
+[1763107569.608][INFO]: Waiting for pending navigations...
+[1763107569.609][INFO]: Done waiting for pending navigations. Status: ok
+[1763107569.609][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107570.202][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107570.202][INFO]: Waiting for pending navigations...
+[1763107570.204][INFO]: Done waiting for pending navigations. Status: ok
+[1763107570.212][INFO]: Waiting for pending navigations...
+[1763107570.213][INFO]: Done waiting for pending navigations. Status: ok
+[1763107570.213][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]
+[1763107570.842][INFO]: [d70aa1cfb89289053eb29deaf04c0192] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[@itemprop='upvoteCount']"
+}
+[1763107570.842][INFO]: Waiting for pending navigations...
+[1763107570.844][INFO]: Done waiting for pending navigations. Status: ok
+[1763107570.855][INFO]: Waiting for pending navigations...
+[1763107570.857][INFO]: Done waiting for pending navigations. Status: ok
+[1763107570.857][INFO]: [d70aa1cfb89289053eb29deaf04c0192] RESPONSE FindElements [  ]

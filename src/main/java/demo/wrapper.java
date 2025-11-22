@@ -58,11 +58,9 @@ public class wrapper {
     public void type(By locator,String value) {
                 try {
           WebElement element =  driver.findElement(locator);
-          element.click();
           element.clear();
           element.sendKeys(value);
           element.submit();
-          Thread.sleep(3000);
 
         } catch (Exception e) {
             System.out.println("error occers during click on element " + e);
