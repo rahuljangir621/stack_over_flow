@@ -16,7 +16,6 @@ public class wrapper {
     ChromeDriver driver;
     WebDriverWait wait;
      
-
     public wrapper(ChromeDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
